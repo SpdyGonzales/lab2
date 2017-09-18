@@ -41,6 +41,16 @@ public class SinglyLinkedList {
         return head;
     }
 
+    public int getLength(Node a){
+        Node temp = a;
+        int length = 0;
+        while(temp.getNext()!=null){
+            length++;
+            temp = temp.getNext();
+        }
+        return length;
+    }
+
     public void printSinglyList() {
         if (head == null) { throw new NoSuchElementException(); }
         Node position = head;
