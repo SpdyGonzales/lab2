@@ -21,7 +21,8 @@ public class InversionCount {
     }
 
     public Node merge(Node a, Node b){
-
+        SinglyLinkedList template = new SinglyLinkedList();
+        int leftCount = template.getLength(a);
         Node dummyHead, curr; dummyHead = new Node(); curr = dummyHead;
             while(a !=null || b!= null) {
                 if(a == null){
@@ -36,12 +37,13 @@ public class InversionCount {
                     if (a.getValue() <= b.getValue()) {
                         curr.setNext(a);
                         a = a.getNext();
-
+                        leftCount--;
                         curr = curr.getNext();
                     } else {
                         curr.setNext(b);
                         b = b.getNext();
-                        inversionCount ++;
+                        inversionCount++;
+                        inversionCount +=leftCount;
                         curr = curr.getNext();
                     }
                 }
