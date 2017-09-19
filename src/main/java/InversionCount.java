@@ -9,7 +9,7 @@ public class InversionCount {
 
        mergeSort(head);
 
-       return inversionCount + 1;
+       return inversionCount;
     }
     public Node mergeSort(Node head){
        if(head == null || head.getNext() == null) { return head; }
@@ -23,7 +23,7 @@ public class InversionCount {
     public Node merge(Node a, Node b){
 
         SinglyLinkedList linkTemplate = new SinglyLinkedList();
-        int leftCount = linkTemplate.getLength(a);
+        int leftCount = linkTemplate.getLength(a)+1;
         Node dummyHead, curr; dummyHead = new Node(); curr = dummyHead;
             while(a !=null || b!= null) {
                 if(a == null){
