@@ -6,8 +6,8 @@ public class Driver {
         list.addEnd(2);
         list.addEnd(2);
         list.addEnd(4);
-        list.addEnd(1);
         list.addEnd(7);
+        list.addEnd(1);
 
         InversionCount invCount = new InversionCount();
         System.out.println(invCount.inversionCounter(list));
@@ -17,8 +17,8 @@ public class Driver {
         list2.addEnd(2);
         list2.addEnd(2);
         list2.addEnd(4);
-        list2.addEnd(1);
         list2.addEnd(7);
+        list2.addEnd(1);
 
         BubbleSort bubbleSorter = new BubbleSort();
         System.out.println(bubbleSorter.bubbleSort(list2));
