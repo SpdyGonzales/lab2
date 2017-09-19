@@ -43,7 +43,7 @@ public class SinglyLinkedList {
 
     public int getLength(Node a){
         Node temp = a;
-        int length = 0;
+        int length = 1;
         while(temp.getNext()!=null){
             length++;
             temp = temp.getNext();

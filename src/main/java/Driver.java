@@ -10,7 +10,7 @@ public class Driver {
         list.addEnd(1);
 
         InversionCount invCount = new InversionCount();
-        System.out.println(invCount.inversionCounter(list));
+        System.out.println("Inversions with MergeSort: " + invCount.inversionCounter(list));
 
         SinglyLinkedList list2 = new SinglyLinkedList();
         list2.addEnd(3);
@@ -21,7 +21,7 @@ public class Driver {
         list2.addEnd(1);
 
         BubbleSort bubbleSorter = new BubbleSort();
-        System.out.println(bubbleSorter.bubbleSort(list2));
+        System.out.println("Swaps with BubbleSort: " + bubbleSorter.bubbleSort(list2));
         list2.printSinglyList();
     }
 }
